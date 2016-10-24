@@ -21,7 +21,7 @@
     var condition = weatherData[0].channel.item.condition.text;
     var forecast = weatherData[0].channel.item.forecast;
     var content = '<h3 id="location">'+location.city+','+location.region+'</h3>';
-        content+= '<span><h1 id="temp">'+temperature+'&deg'+'</h2></span>';
+        content+= '<span><h1 id="temp">'+temperature+'&deg'+'</h1><p id="condition">'+condition+'</p></span>';
         content+='<ul class="forecast">';
         content+= '<li class="forecast_section">'+forecast[0].day+'<br>'+forecast[0].high+'&deg'+'/'+forecast[0].low+'&deg'+'</li>';
         content+= '<li class="forecast_section">'+forecast[1].day+'<br>'+forecast[1].high+'&deg'+'/'+forecast[1].low+'&deg'+'</li>';
